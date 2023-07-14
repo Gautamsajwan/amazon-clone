@@ -1,0 +1,68 @@
+[debug] [2022-12-03T10:36:02.532Z] ----------------------------------------------------------------------
+[debug] [2022-12-03T10:36:02.536Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\Desktop\Amazon-clone\amazon-clone\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2022-12-03T10:36:02.537Z] CLI Version:   11.16.1
+[debug] [2022-12-03T10:36:02.538Z] Platform:      win32
+[debug] [2022-12-03T10:36:02.538Z] Node Version:  v18.12.1
+[debug] [2022-12-03T10:36:02.542Z] Time:          Sat Dec 03 2022 16:06:02 GMT+0530 (India Standard Time)
+[debug] [2022-12-03T10:36:02.543Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-03T10:36:02.811Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-03T10:36:02.814Z] > authorizing via signed-in user (gautamsajwan8126@gmail.com)
+[debug] [2022-12-03T10:36:02.815Z] [iam] checking project challenge-25608 for permissions ["firebase.projects.get"]
+[debug] [2022-12-03T10:36:02.826Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-25608:testIamPermissions [none]
+[debug] [2022-12-03T10:36:02.827Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-25608:testIamPermissions x-goog-quota-user=projects/challenge-25608
+[debug] [2022-12-03T10:36:02.827Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-25608:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-03T10:36:04.556Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-25608:testIamPermissions 200
+[debug] [2022-12-03T10:36:04.557Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/challenge-25608:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-03T10:36:04.572Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-12-03T10:36:04.634Z] defaultcredentials: writing to file C:\Users\hp\AppData\Roaming\firebase\gautamsajwan8126_gmail_com_application_default_credentials.json
+[debug] [2022-12-03T10:36:04.638Z] DEBUG: Setting GAC to C:\Users\hp\AppData\Roaming\firebase\gautamsajwan8126_gmail_com_application_default_credentials.json
+[debug] [2022-12-03T10:36:04.641Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-25608/adminSdkConfig [none]
+[debug] [2022-12-03T10:36:05.514Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-25608/adminSdkConfig 200
+[debug] [2022-12-03T10:36:05.515Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-25608/adminSdkConfig {"projectId":"challenge-25608","storageBucket":"challenge-25608.appspot.com"}
+[debug] [2022-12-03T10:36:05.553Z] [functions] Watching "C:\Users\hp\Desktop\Amazon-clone\amazon-clone\functions" for Cloud Functions...
+[debug] [2022-12-03T10:36:05.572Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-03T10:36:15.657Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^11.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-03T10:36:15.659Z] Building nodejs source
+[debug] [2022-12-03T10:36:15.660Z] Analyzing nodejs backend spec
+[debug] [2022-12-03T10:36:15.665Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-03T10:36:16.781Z] Serving at port 9005
+
+[debug] [2022-12-03T10:36:17.384Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-03T10:36:17.412Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-12-03T10:36:17.448Z] [functions] Loaded functions definitions from source: api.
+[debug] [2022-12-03T10:36:17.464Z] [functions[us-central1-api]] http function initialized (http://127.0.0.1:5000/challenge-25608/us-central1/api).
+[info] i  functions: Loaded functions: api 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc 
